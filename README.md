@@ -9,22 +9,22 @@ This repository contains plugins for paintable assets that I consider as somethi
 You can choose whatever you need, and ignore what you are not interested. But some of the plugin items requires modules in `common` as dependency, so it's recommended to keep that directory.
 
 * [`common`](common): common modules, imported by code in other directories
-	* [`utils`](common/utils.bas)
-	* [`frame`](common/frame.bas)
-	* [`sheet`](common/sheet.bas)
+	* [`utils.bas`](common/utils.bas)
+	* [`frame.bas`](common/frame.bas)
+	* [`sheet.bas`](common/sheet.bas)
 * [`utilities`](utilities): utilities
-	* [`pick color`](utilities/pick color.bas)
-* [`working area`](working area): manipulates pixels for sprite, map, tiles, quantized, etc.
-	* [`rotate clockwise`](working area/rotate clockwise.bas)
-	* [`rotate anticlockwise`](working area/rotate anticlockwise.bas)
-	* [`flip horizontally`](working area/flip horizontally.bas)
-	* [`flip vertically`](working area/flip vertically.bas)
-* [`external formats`](external formats): importers and exporters
-	* [`import sequence`](external formats/import sequence.bas)
-	* [`import 4x4 sheet`](external formats/import 4x4 sheet.bas)
-	* [`import 4x3 sheet`](external formats/import 4x3 sheet.bas)
-	* [`export frame`](external formats/export frame.bas)
-	* [`export frames`](external formats/export frames.bas)
+	* [`pick color.bas`](utilities/pick%20color.bas)
+* [`working area`](working%20area): manipulates pixels for sprite, map, tiles, quantized, etc.
+	* [`rotate clockwise.bas`](working%20area/rotate%20clockwise.bas)
+	* [`rotate anticlockwise.bas`](working%20area/rotate%20anticlockwise.bas)
+	* [`flip horizontally.bas`](working%20area/flip%20horizontally.bas)
+	* [`flip vertically.bas`](working%20area/flip%20vertically.bas)
+* [`external formats`](external%20formats): importers and exporters
+	* [`import sequence.bas`](external%20formats/import%20sequence.bas)
+	* [`import 4x4 sheet.bas`](external%20formats/import%204x4%20sheet.bas)
+	* [`import 3x4 sheet.bas`](external%20formats/import%203x4%20sheet.bas)
+	* [`export frame.bas`](external%20formats/export%20frame.bas)
+	* [`export frames.bas`](external%20formats/export%20frames.bas)
 
 ## Using
 
@@ -46,7 +46,7 @@ Some plugins requires common modules by the `IMPORT` statement, BASIC8 uses the 
 Keep the directory structure of this repository under your local `plugins` directory, files should be put at, for example:
 
 * "C:/Users/YourName/Documents/BASIC8/plugins/[`common`](common)/[`frame.bas`](common/frame.bas)"
-* "C:/Users/YourName/Documents/BASIC8/plugins/[`working area`](working area)/[`rotate clockwise.bas`](working area/rotate clockwise.bas)"
+* "C:/Users/YourName/Documents/BASIC8/plugins/[`working area`](working%20area)/[`rotate clockwise.bas`](working%20area/rotate%20clockwise.bas)"
 * Etc.
 
 ### Running
