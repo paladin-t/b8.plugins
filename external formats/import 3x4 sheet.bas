@@ -30,7 +30,7 @@ def run()
 	if not f then
 		return
 	endif
-	import_sheet_file(f, 3, 4, true)
+	import_sheet_file(f, 3, 4, true) ' Imports 3x4 sheet, stretches if necessary.
 enddef
 
 REM Checks the operation.

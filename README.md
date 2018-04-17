@@ -28,9 +28,9 @@ You can choose whatever you need, and ignore what you are not interested. But so
 
 ## Using
 
-### Installation
+### Installing
 
-It's not recommended to manipulate disks under the library directory manually, but don't be afraid of screwing off to install these plugins, following steps:
+It's not recommended to manipulate regular disks under the library directory manually, but don't be afraid of screwing off to install these plugins, following steps:
 
 1. Clone or download then extract the latest [content](https://github.com/paladin-t/b8.plugins/archive/master.zip) to your local storage
 2. Create a `plugins` directory under the root directory of your disk library if it's not yet there
@@ -57,7 +57,7 @@ Right click on the editing area of any paintable asset to show all plugged items
 
 ### Interrupting
 
-Unlike regular disks, plugins run in the same thread with the graphics shell. So you were in charge of ensuring a plugin runs and terminates normally, as a plugin developer. Besides, press the Pause/Break key to interrupt the execution whenever developing or using a plugin; click the close button on the BASIC8 window or Alt+F4 for the same affect, even from an unexpected infinity loop.
+Unlike regular disks, plugins run in the same thread with the graphics shell. So you were in charge of ensuring a plugin runs and terminates normally, as a plugin developer. Besides, press the Pause/Break key to interrupt the execution whenever developing or using a plugin; click the close button on the BASIC8 window or Alt+F4 for the same affect, even from an unexpected infinite loop.
 
 ## Development
 
@@ -152,7 +152,7 @@ All pixel modifications by the `SET_PIXEL` function are encapsulated between a p
 
 ### File dialog
 
-* `OPEN_FILE_DIALOG([y [, m]])`: shows an open file dialog box
+* `OPEN_FILE_DIALOG([y, m = FALSE])`: shows an open file dialog box
 	* `y`: file type extensions, separated by comma
 	* `m`: true for multiple selection
 	* returns file path for single selection, list of file paths for multiple selection, or nil for canceled
