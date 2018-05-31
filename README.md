@@ -30,10 +30,10 @@ You can pick whatever you need, and ignore what you are not interested. But some
 
 ### Installing
 
-It's not recommended to manipulate regular disks under the library directory manually, but don't be afraid of screwing off to plug these expansions, following steps:
+It's not recommended to manipulate regular disks under the library directory manually, but don't be afraid of screwing off to plug these expansions, following these steps:
 
 1. Clone or [download](https://github.com/paladin-t/b8.plugins/archive/master.zip) then extract the latest content to your local storage
-2. Create a `plugins` directory under the root directory of your disk library if it's not yet there, BASIC8 looks for plugins under directory with the exact name
+2. Create a `plugins` directory under the root directory of your disk library if it's not yet there, BASIC8 looks for plugins exactly under that directory
 3. Put extracted plugins under the `plugins` directory, do not include the `.git` stuff if you were cloning from here
 4. You need to reopen BASIC8 to use any new plugged expansions
 
@@ -63,7 +63,7 @@ Unlike regular disks, plugins run in the same thread with the graphics shell. So
 
 Only a subset of the full BASIC8 libraries is exposed to plugin, including `Bytes`, `File`, `Image`, `IO`, `JSON`, `Math`, `System`, `Text` and `Utils`; besides, there are also some dedicated functions exposed for plugin only.
 
-BASIC8 scans and plugs all plugins on startup by running it top down, reopen it for any new created plugin; it also executes top down when triggering a plugin, you don't need to reopen BASIC8 when developing a plugin's logic iteratively, because each triggering is a new read-evaluate-process loop; for this reason, the plugin interpreter doesn't reserve values with variables for future triggering. These two phases are respectively called "plug" and "run".
+BASIC8 scans and plugs all plugins on startup by running it top down, reopen it for any new created plugin; it also executes top down when triggering a plugin, but you don't need to reopen BASIC8 when developing a plugin's logic iteratively, because each triggering is a new read-evaluate-process loop; for this reason, the plugin interpreter doesn't reserve values with variables for future triggering. These two phases are respectively called "plug" and "run".
 
 ### Meta
 

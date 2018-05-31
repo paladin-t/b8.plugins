@@ -4,7 +4,7 @@ REM Plugin program of BASIC8.
 
 import "common/utils"
 
-' Gets all pixels within an area.
+' Gets all pixels within an area in the current asset context.
 ' @param x0 - X position.
 ' @param y0 - Y position.
 ' @param w - Width of an area.
@@ -24,7 +24,7 @@ def get_pixels_rect(x0, y0, w, h)
 	return d
 enddef
 
-' Checks whether the current frame is blank
+' Checks whether the current frame is blank in the current asset context.
 ' @param t - Transparent palette index.
 ' @return - Returns true if it's blank.
 def is_frame_blank(t)
