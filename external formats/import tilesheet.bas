@@ -40,7 +40,7 @@ def run()
 	g.load(f)
 	iw = g.len(0)
 	ih = g.len(1)
-	if (iw <> w or ih <> h) then
+	if iw <> w or ih <> h then
 		g.resize(w, h)
 		iw = w
 		ih = h
