@@ -23,6 +23,7 @@ You can pick whatever you need, and ignore what you are not interested. But some
 	* [`import sequence.bas`](external%20formats/import%20sequence.bas)
 	* [`import 4x4 sheet.bas`](external%20formats/import%204x4%20sheet.bas)
 	* [`import 3x4 sheet.bas`](external%20formats/import%203x4%20sheet.bas)
+	* [`import tilesheet.bas`](external%20formats/import%20tilesheet.bas)
 	* [`export frame.bas`](external%20formats/export%20frame.bas)
 	* [`export frames.bas`](external%20formats/export%20frames.bas)
 
@@ -102,7 +103,7 @@ Sprite frame, map layer and quantized image are all conceptualized as "frame" wi
 
 ![](imgs/range.png)
 
-* `GET_FRAME_SIZE()`: gets the size in pixels or tiles of a frame
+* `GET_FRAME_SIZE()`: gets the size in pixels a frame or tile count of a map
 	* returns vec2 for width, height
 * `GET_FRAME_INDEX()`: gets the selected frame index of the current asset
 	* returns integer

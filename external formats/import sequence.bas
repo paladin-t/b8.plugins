@@ -14,7 +14,7 @@ def plug()
 	(
 		"sprite", ' Target assets.
 		"Import sequence", ' Name.
-		"Import a sequence of images to current sprite asset", ' Tooltips.
+		"Import a sequence of images to the current sprite asset", ' Tooltips.
 		false, ' Selection only?
 		false, ' Square only?
 		30, ' Category.

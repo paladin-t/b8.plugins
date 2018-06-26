@@ -14,11 +14,11 @@ def plug()
 	(
 		"sprite", ' Target assets.
 		"Export frame", ' Name.
-		"Export selection or current frame to image", ' Tooltips.
+		"Export the selection or current frame to image", ' Tooltips.
 		false, ' Selection only?
 		false, ' Square only?
 		30, ' Category.
-		40 ' Priority.
+		50 ' Priority.
 	)
 enddef
 

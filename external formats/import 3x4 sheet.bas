@@ -14,7 +14,7 @@ def plug()
 	(
 		"sprite", ' Target assets.
 		"Import 3x4 sheet", ' Name.
-		"Import an image sheet to current sprite asset", ' Tooltips.
+		"Import an image sheet to the current sprite asset", ' Tooltips.
 		false, ' Selection only?
 		false, ' Square only?
 		30, ' Category.

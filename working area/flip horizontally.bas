@@ -33,6 +33,7 @@ def run()
 	y1 = 0
 	w = 0
 	h = 0
+	d = nil
 	' Gets the operating area.
 	if has_selection() then
 		v = get_selection_range()
