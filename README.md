@@ -14,6 +14,7 @@ You can pick whatever you need, and ignore what you are not interested. But some
 	* [`sheet.bas`](common/sheet.bas)
 * [`utilities`](utilities): just as its name implies
 	* [`pick color.bas`](utilities/pick%20color.bas)
+	* [`replace color.bas`](utilities/replace%20color.bas)
 * [`working area`](working%20area): manipulates pixels for sprite, map, tiles, quantized, etc.
 	* [`rotate clockwise.bas`](working%20area/rotate%20clockwise.bas)
 	* [`rotate anticlockwise.bas`](working%20area/rotate%20anticlockwise.bas)
