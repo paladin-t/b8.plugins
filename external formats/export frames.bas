@@ -18,7 +18,7 @@ def plug()
 		false, ' Selection only?
 		false, ' Square only?
 		30, ' Category.
-		60 ' Priority.
+		70 ' Priority.
 	)
 enddef
 

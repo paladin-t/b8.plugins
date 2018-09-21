@@ -12,13 +12,13 @@ def plug()
 	print "Loading plugin: Export frame...";
 	register_plugin
 	(
-		"sprite", ' Target assets.
+		"sprite, quantized", ' Target assets.
 		"Export frame", ' Name.
 		"Export the selection or current frame to image", ' Tooltips.
 		false, ' Selection only?
 		false, ' Square only?
 		30, ' Category.
-		50 ' Priority.
+		60 ' Priority.
 	)
 enddef
 

@@ -25,6 +25,7 @@ You can pick whatever you need, and ignore the rest. But some of the plugin scri
 	* [`import 4x4 sheet.bas`](external%20formats/import%204x4%20sheet.bas)
 	* [`import 3x4 sheet.bas`](external%20formats/import%203x4%20sheet.bas)
 	* [`import tilesheet.bas`](external%20formats/import%20tilesheet.bas)
+	* [`import frame.bas`](external%20formats/import%20frame.bas)
 	* [`export frame.bas`](external%20formats/export%20frame.bas)
 	* [`export frames.bas`](external%20formats/export%20frames.bas)
 
