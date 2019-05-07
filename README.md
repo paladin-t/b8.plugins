@@ -20,6 +20,8 @@ You can pick whatever you need, and ignore the rest. But some of the plugin scri
 	* [`rotate anticlockwise.bas`](working%20area/rotate%20anticlockwise.bas)
 	* [`flip horizontally.bas`](working%20area/flip%20horizontally.bas)
 	* [`flip vertically.bas`](working%20area/flip%20vertically.bas)
+	* [`shift left.bas`](working%20area/shift%20left.bas)
+	* [`shift right.bas`](working%20area/shift%20right.bas)
 * [`external formats`](external%20formats): importers and exporters
 	* [`import sequence.bas`](external%20formats/import%20sequence.bas)
 	* [`import 4x4 sheet.bas`](external%20formats/import%204x4%20sheet.bas)

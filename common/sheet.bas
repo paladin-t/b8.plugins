@@ -1,5 +1,5 @@
 REM BASIC8
-REM Copyright (C) 2017 - 2018 Tony Wang
+REM Copyright (C) 2017 - 2019 Tony Wang
 REM Plugin program of BASIC8.
 
 import "common/frame"

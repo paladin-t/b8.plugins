@@ -1,5 +1,5 @@
 REM BASIC8
-REM Copyright (C) 2017 - 2018 Tony Wang
+REM Copyright (C) 2017 - 2019 Tony Wang
 REM Plugin program of BASIC8.
 
 REM Imports common modules.
@@ -18,7 +18,7 @@ def plug()
 		false, ' Selection only?
 		false, ' Square only?
 		20, ' Category.
-		30 ' Priority.
+		40 ' Priority.
 	)
 enddef
 
