@@ -15,7 +15,7 @@ def plug()
 		"Import a frame of image to the current asset", ' Tooltips.
 		false, ' Selection only?
 		false, ' Square only?
-		30, ' Category.
+		40, ' Category.
 		50 ' Priority.
 	)
 enddef

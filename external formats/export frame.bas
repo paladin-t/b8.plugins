@@ -17,7 +17,7 @@ def plug()
 		"Export the selection or current frame to image", ' Tooltips.
 		false, ' Selection only?
 		false, ' Square only?
-		30, ' Category.
+		40, ' Category.
 		60 ' Priority.
 	)
 enddef

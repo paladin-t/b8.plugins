@@ -15,7 +15,7 @@ def plug()
 		"Import a tilesheet of image to the current tiles asset", ' Tooltips.
 		false, ' Selection only?
 		false, ' Square only?
-		30, ' Category.
+		40, ' Category.
 		40 ' Priority.
 	)
 enddef

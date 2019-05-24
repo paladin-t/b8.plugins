@@ -17,7 +17,7 @@ def plug()
 		"Export the selected range to images", ' Tooltips.
 		false, ' Selection only?
 		false, ' Square only?
-		30, ' Category.
+		40, ' Category.
 		70 ' Priority.
 	)
 enddef

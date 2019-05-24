@@ -22,6 +22,8 @@ You can pick whatever you need, and ignore the rest. But some of the plugin scri
 	* [`flip vertically.bas`](working%20area/flip%20vertically.bas)
 	* [`shift left.bas`](working%20area/shift%20left.bas)
 	* [`shift right.bas`](working%20area/shift%20right.bas)
+* [`frames`](frames): operations across frames
+	* [`copy to all.bas`](frames/copy%20to%20all.bas)
 * [`external formats`](external%20formats): importers and exporters
 	* [`import sequence.bas`](external%20formats/import%20sequence.bas)
 	* [`import 4x4 sheet.bas`](external%20formats/import%204x4%20sheet.bas)
