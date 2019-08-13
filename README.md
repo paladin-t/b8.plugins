@@ -166,3 +166,6 @@ All pixel modifications by the `SET_PIXEL` function are encapsulated during a pa
 * `SAVE_FILE_DIALOG([y])`: shows a dialog box to save file
 	* `y`: file type extensions, separated by comma
 	* returns file path, or nil for canceled
+* `PICK_DIRECTORY_DIALOG([d])`: shows a dialog to pick directory
+	* `d`: default directory
+	* returns dialog path, or nil for canceled
