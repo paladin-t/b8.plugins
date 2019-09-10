@@ -8,7 +8,7 @@ def plug()
 	print "Loading plugin: Replace color...";
 	register_plugin
 	(
-		"sprite, tiles, quantized", ' Target assets.
+		"sprite, map, tiles, quantized", ' Target assets.
 		"Replace color", ' Name.
 		"Replace all pixels in the color at the specified position with the active palette", ' Tooltips.
 		false, ' Selection only?
