@@ -1,12 +1,12 @@
 ## Plugins for [BASIC8](https://paladin-t.github.io/b8/)
 
-I've made many generic functionalities as built-in editors in BASIC8, and I've also been getting questions like, "hey, can you make an importer/exporter for x/y/z... format?" One of the reasons I created this repository is to reply these questions. I would prefer to make feature being specific to a particular aspect as scriptable plugin, instead of constant functionality. Since they might be changed very often or completely one-off, and not always used developing every disk. Moreover, it feels great to have the editors extendable, rather than limited to what I've provided.
+It's designed to contain the most commonly used features as built-in editors in BASIC8. I've also been getting questions like, "hi, can you make an importer/exporter for this or that format?" One of the reasons I created this repository is implementing some mechanism to simply and handily make operations BASIC8 doesn't offer. Obviously the title tells that "plugin" is that mechanism.
 
-This repository contains plugins for paintable assets that I consider as something between "generic to all" and "specific to one", thus might fit some of your frequently asked requirements; and necessary information for developing your own plugins.
+This repository contains plugins for paintable assets that I consider being between "generic" and "specific". It covers frequently asked requirements; and describes necessary information for developing your own plugins.
 
 ## Contents
 
-You can pick whatever you need, and ignore the rest. But some of the plugin scripts require modules in `common` as dependency, so it's recommended to keep that directory, it's also recommended to put reusable modules in it for your own plugins.
+You can pick anything you need here, and ignore others. But some of the plugin scripts require modules in `common` as dependency, so it's necessary to keep that directory, it's also recommended to put your own reusable modules inside it.
 
 * [`common`](common): common modules, imported by code in other directories
 	* [`utils.bas`](common/utils.bas)
@@ -41,18 +41,18 @@ You can pick whatever you need, and ignore the rest. But some of the plugin scri
 
 It's not recommended to manipulate regular disks under the library directory manually, but don't be afraid of screwing off to plug these expansions:
 
-1. Clone or [download](https://github.com/paladin-t/b8.plugins/archive/master.zip) then extract the latest content somewhere on your local storage
-2. Create a `plugins` directory under the root directory of your disk library if it's not yet there, BASIC8 looks for plugins exactly under that directory
-3. Put extracted plugins under the `plugins` directory, do not include the `.git` stuff if you were cloning from here
+1. Clone or [download](https://github.com/paladin-t/b8.plugins/archive/master.zip) and extract the latest content somewhere on your computer
+2. Create a `plugins` directory under the root directory of your disk library, if it's not yet been there, BASIC8 looks for plugins under that directory strictly
+3. Put plugin scripts you just extracted under the `plugins` directory, do not include the `.git` stuff if you were cloning from here
 4. You need to reopen BASIC8 to use any new plugged expansions
 
-Some plugins requires common modules by the `IMPORT` statement, plugin uses the following directory, for example, as lookup root to import another source file:
+Some plugins require dependency modules by the `IMPORT` statement, plugin uses the following directory, for example, as lookup root to import another source file:
 
 * "C:/Users/YourName/Documents/BASIC8/plugins/" on Windows
 * "/Users/YourName/Documents/BASIC8/plugins/" on MacOS
 * "/home/YourName/Documents/BASIC8/plugins/" on Linux
 
-It's important to keep the directory structure of this repository under your local `plugins` directory, files should be put at, for example:
+It's important to have the directory structure remain unchanged according to this repository under your local `plugins` directory. Files should be located at, for example:
 
 * "C:/Users/YourName/Documents/BASIC8/plugins/[`common`](common)/[`frame.bas`](common/frame.bas)"
 * "C:/Users/YourName/Documents/BASIC8/plugins/[`working area`](working%20area)/[`rotate clockwise.bas`](working%20area/rotate%20clockwise.bas)"
@@ -62,17 +62,17 @@ It's important to keep the directory structure of this repository under your loc
 
 ![](imgs/items.png)
 
-Right click on the editing area of any paintable asset to show all plugged expansions which are usable for current context. Left click on an item to trigger it.
+Right click on the editing area of any paintable asset to show all plugged expansions which are usable for current context. Left click on a menu item to run it.
 
 ### Interrupting
 
-Unlike regular disks, plugins run in the same thread with the graphics part. So you were in charge of guaranteeing a plugin runs and terminates normally, as a plugin developer. Besides, press the Pause/Break key to interrupt the execution whenever developing or using a plugin; click the close button on the BASIC8 window or Alt+F4 for the same affect, it breaks even from unexpected infinite loop.
+Unlike regular disks, plugins run in the same thread with the graphics part. So as a plugin developer, you were in charge of guaranteeing a plugin runs and terminates normally. Press the Pause/Break key to interrupt the execution whenever you consider something is going wrong in plugin; click the close button on the BASIC8 window or Alt+F4 for the same affect, it breaks out even from unexpected infinite loop.
 
 ## Development
 
-Only a subset of the BASIC8 programming libraries are exposed for plugin, including `Bytes`, `File`, `Image`, `IO`, `JSON`, `Math`, `System`, `Text` and `Utils`; besides, there are also some dedicated functions for plugin only.
+Only a subset of the BASIC8 programming libraries are exposed for plugin, including `Bytes`, `File`, `Image`, `IO`, `JSON`, `Math`, `System`, `Text` and `Utils`; besides, there are also some dedicated plugin only functions.
 
-BASIC8 scans and plugs all plugins on startup by running it top down, reopen it for any new created plugin; it also executes top down when triggering a plugin, but you don't need to reopen BASIC8 when developing a plugin's logic iteratively, because each triggering is a new read-evaluate-process loop; and the plugin interpreter doesn't reserve values of variables. These two phases are called "plug" and "run" respectively.
+BASIC8 scans and plugs all plugins on startup by running it top down, reopen it for any new plugin; it also executes top down when triggering a plugin, but you don't need to reopen BASIC8 for changes in existing plugin, because each triggering is a new read-evaluate-process loop; and the plugin interpreter doesn't reserve values of variables. These two phases are called "plug" and "run" respectively.
 
 ### Meta
 
@@ -144,7 +144,7 @@ Sprite frame, map layer and quantized image are all conceptualized as "frame" fo
 	* `msg`: text message to be displayed on the undo/redo tooltip
 * `END_OPERATION()`: ends a plugin operation
 
-All pixel modifications by the `SET_PIXEL` function are encapsulated during a pair of `BEGIN_OPERATION` and `END_OPERATION`, as a single undo/redo.
+All pixel modifications by the `SET_PIXEL` function are packed between a pair of `BEGIN_OPERATION` and `END_OPERATION`, as a single undo/redo step.
 
 ### Source
 
