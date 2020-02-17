@@ -100,6 +100,11 @@ A plugin script should contains zero (for common module) or one (for functional 
 	* returns file path
 * `SET_ASSET_UNSAVED()`: sets the current asset as unsaved
 
+* `GET_ASSETS()`: get the file paths of all the assets
+	* returns list of paths
+* `OPEN_ASSETS([pattern])`: opens the assets which match the specific pattern
+	* `patterh`: the specific pattern, eg. "*.sprite", "img_??.quantized"
+
 ### Working area
 
 Sprite frame, map layer and quantized image are all conceptualized as "frame" for plugins. The index of sprite starts from 1.
